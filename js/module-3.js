@@ -779,46 +779,51 @@
 
 // case 41
 
-const atTheOldToad = {
-  potions: [
-    { name: 'Зелье скорости', price: 460 },
-    { name: 'Дыхание дракона', price: 780 },
-    { name: 'Каменная кожа', price: 520 },
-  ],
-  // Пиши код ниже этой строки
+// const atTheOldToad = {
+//   potions: [
+//     { name: 'Зелье скорости', price: 460 },
+//     { name: 'Дыхание дракона', price: 780 },
+//     { name: 'Каменная кожа', price: 520 },
+//   ],
+
+//   // Пиши код ниже этой строки
+
 //   getPotions() {
 //     return this.potions;
 //   },
+
 //   addPotion(potionName) {
-//     if (this.potions.includes(potionName)) {
-//       return `Зелье ${potionName} уже есть в инвентаре!`;
-//     }
 
 //     this.potions.push(potionName);
 //   },
+
 //   removePotion(potionName) {
-//     const potionIndex = this.potions.indexOf(potionName);
 
-//     if (potionIndex === -1) {
-//       return `Зелья ${potionName} нет в инвентаре!`;
-//     }
-
-//     this.potions.splice(potionIndex, 1);
+//     for (let i = 0; i < this.potions.length; i += 1) {
+//       if (this.potions[i].name === potionName) {
+//         this.potions.splice(i, 1);
+//         return this.potions
+//       }
+//         }
 //   },
+
 //   updatePotionName(oldName, newName) {
-//     const potionIndex = this.potions.indexOf(oldName);
-
-//     if (potionIndex === -1) {
-//       return `Зелья ${oldName} нет в инвентаре!`;
-//     }
-
-//     this.potions.splice(potionIndex, 1, newName);
+//     for (let i = 0; i < this.potions.length; i += 1) {
+//       if (this.potions[i].name == oldName) {
+//         this.potions[i].name = newName;
+//         this.potions.splice(i, 1,this.potions[i]);
+//         return this.potions
+//       }
+//         }
 //   },
-  // Пиши код выше этой строки
-};
+
+// //  Пиши код выше этой строки
+// };
+
+
 
 // console.log(atTheOldToad.getPotions());// для исходного объекта возвращает [ { name: 'Зелье скорости', price: 460 }, { name: 'Дыхание дракона', price: 780 }, { name: 'Каменная кожа', price: 520 } ].
-console.log(atTheOldToad.addPotion({ name: 'Невидимка', price: 620 }));//, в массиве potions последним элементом будет этот объект.
+// console.log(atTheOldToad.addPotion({ name: 'Невидимка', price: 620 }));//, в массиве potions последним элементом будет этот объект.
 // console.log(atTheOldToad.addPotion({ name: 'Зелье силы', price: 270 }));//, в массиве potions последним элементом будет этот объект.
 // console.log(atTheOldToad.removePotion('Дыхание дракона'));//, в свойстве potions будет массив [ { name: 'Зелье скорости', price: 460 }, { name: 'Каменная кожа', price: 520 } ].
 // console.log(atTheOldToad.removePotion('Зелье скорости'));//, в свойстве potions будет массив [ { name: 'Дыхание дракона', price: 780 }, { name: 'Каменная кожа', price: 520 } ].
